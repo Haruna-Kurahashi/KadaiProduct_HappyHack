@@ -1,0 +1,411 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ Pro W3", Meiryo,
+    メイリオ, Osaka, "MS PGothic", sans-serif;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("HappyHack_sozai/fonts/Futura-Boo.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("HappyHack_sozai/fonts/Futura-MedObl.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Futura";
+  src: url("HappyHack_sozai/fonts/Futura-Bol.ttf") format("truetype");
+  font-weight: bold;
+}
+
+/* ヘッダー部分 */
+.logo {
+  padding: 256px 390px;
+}
+
+h1 img {
+  width: 900px;
+  height: 237px;
+  margin: auto;
+}
+
+.subtitle {
+  color: #fff;
+  font-size: 45px;
+  text-align: center;
+  margin-top: 30px;
+  font-family: "Futura";
+  font-style: italic;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  float: right;
+  padding: 0 50px;
+}
+
+nav li {
+  list-style-type: none;
+  float: left;
+}
+
+nav a {
+  text-decoration: none;
+  display: block;
+  color: #fff;
+  font-size: 27px;
+  padding: 30px 15px 0px;
+  font-family: "Futura";
+}
+
+nav a:hover {
+  color: #3d5cdb;
+  transition: 0.5s;
+}
+
+/* Introduction */
+.Introduction {
+  opacity: 0;
+  transform: translate(0, -20px);
+  transition: all 1700ms;
+}
+
+.Introduction.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+h2 {
+  color: #3d5cdb;
+  font-size: 60px;
+  font-family: "Futura";
+  font-weight: bold;
+  text-align: center;
+  padding: 40px;
+}
+
+.registerText {
+  font-size: 16px;
+  color: #333333;
+  line-height: 32px;
+  width: 400px;
+  padding: 0px 50px 20px;
+}
+
+.intro {
+  width: 500px;
+  height: 333px;
+  float: left;
+}
+
+.intro-container {
+  float: left;
+  margin: 20px;
+  width: 500px;
+  height: 324px;
+}
+
+.register {
+  color: #fff;
+  font-size: 20px;
+  background-color: #3d5cdb;
+  border-radius: 12px;
+  font-weight: 700;
+  line-height: 40px;
+  text-align: center;
+  text-decoration: none;
+  padding: 10px 40px;
+  margin: 30px 165px;
+}
+
+.register:hover {
+  box-shadow: #d1d1d1 0px 2px 15px 2px;
+}
+
+.intro1 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 40px;
+}
+
+.intro2 a {
+  background-color: #ffbf00;
+}
+
+.intro2 {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 40px;
+}
+
+/* コース紹介 */
+.Courses {
+  opacity: 0;
+  transform: translate(0, -20px);
+  transition: all 1700ms;
+}
+
+.Courses.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+#particles-js {
+  width: 100vw;
+  height: 110vh;
+  background-color: #d6e6f9;
+  position: absolute;
+  z-index: -1;
+}
+
+.courses-container {
+  width: 1170px;
+  height: 740px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  padding: 0px 0px 50px;
+}
+
+.course {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 20px 10px 10px;
+}
+
+.icon-html {
+  width: 100px;
+  height: 140px;
+  display: block;
+  margin: auto;
+}
+
+.courseImage {
+  width: 150px;
+  height: 148px;
+  margin: auto auto;
+}
+
+h3 {
+  margin: 10px;
+  padding-top: 20px;
+  font-size: 15px;
+  text-align: center;
+  font-weight: 700;
+  color: #183c61;
+}
+
+.button-html {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  background-color: #f16529;
+  border-radius: 12px;
+  text-align: center;
+  margin: 15px 5px;
+  padding: 10px 30px;
+}
+
+.button:hover {
+  box-shadow: #cecece 0px 2px 15px 2px;
+}
+
+.button-css {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-align: center;
+  margin: 15px 5px;
+  padding: 10px 30px;
+  background-color: #29a9df;
+}
+
+.icon-css {
+  width: 100px;
+  height: 154px;
+  display: block;
+  margin: auto;
+}
+
+.button-unity {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-align: center;
+  margin: 15px 5px;
+  padding: 10px 30px;
+  background-color: #333333;
+}
+
+.icon-unity {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 24px 25px;
+}
+
+.button-ruby {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-align: center;
+  margin: 15px 5px;
+  padding: 10px 30px;
+  background-color: #ff5252;
+}
+
+.icon-ruby {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 24px 25px;
+}
+
+.button-js {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-align: center;
+  margin: 15px 5px;
+  padding: 10px 30px;
+  background-color: #fed700;
+}
+
+.icon-js {
+  width: 100px;
+  height: 140px;
+  display: block;
+  margin: auto;
+}
+
+.button-swift {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-align: center;
+  margin: 15px 5px;
+  padding: 10px 30px;
+  background-color: #fe7536;
+}
+
+.icon-swift {
+  width: 100px;
+  height: 89px;
+  display: block;
+  margin: 29px 25px;
+}
+
+.button-go {
+  text-decoration: none;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 12px;
+  text-align: center;
+  margin: 15px 5px;
+  padding: 10px 30px;
+  background-color: #73cedd;
+}
+
+.icon-go {
+  width: 100px;
+  height: 100px;
+  display: block;
+  margin: 24px 25px;
+}
+
+/* Imageスライダー */
+.Images {
+  margin-bottom: 50px;
+  opacity: 0;
+  transform: translate(0, -20px);
+  transition: all 1700ms;
+}
+
+.Images.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.slider {
+  margin: 0px 168px;
+  padding: 30px 0px;
+}
+
+.sliderImage {
+  height: 224px;
+}
+
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.slick-dots {
+  text-align: center;
+  margin: 0 0 30px 0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  color: black;
+}
+
+/* アクセス */
+.Access {
+  padding-bottom: 40px;
+  opacity: 0;
+  transform: translate(0, -20px);
+  transition: all 1700ms;
+}
+
+.Access.scrollin {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.map {
+  text-align: center;
+}
+
+footer {
+  color: #3d5cdb;
+  line-height: 60px;
+  font-size: 16px;
+  font-family: "Futura";
+  font-weight: normal;
+  text-align: center;
+}
