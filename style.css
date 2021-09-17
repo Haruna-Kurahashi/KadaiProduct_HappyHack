@@ -24,14 +24,13 @@
   font-weight: bold;
 }
 
-/* ヘッダー部分 */
-.logo {
-  padding: 256px 390px;
+.visual-container {
+  overflow: hidden;
 }
 
+/* ヘッダー部分 */
 h1 img {
   width: 900px;
-  height: 237px;
   margin: auto;
 }
 
@@ -45,13 +44,18 @@ h1 img {
 }
 
 header {
-  width: 100%;
+  position: relative;
   height: 100vh;
   background-position: center center;
   background-size: cover;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+}
+
+.logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
 }
 
 nav {
@@ -96,7 +100,7 @@ h2 {
   font-family: "Futura";
   font-weight: bold;
   text-align: center;
-  padding: 40px;
+  padding: 40px 40px 20px;
 }
 
 .registerText {
@@ -160,6 +164,7 @@ h2 {
   opacity: 0;
   transform: translate(0, -20px);
   transition: all 1700ms;
+  position: relative;
 }
 
 .Courses.scrollin {
@@ -172,6 +177,10 @@ h2 {
   height: 110vh;
   background-color: #d6e6f9;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   z-index: -1;
 }
 
@@ -200,12 +209,16 @@ h2 {
   height: 140px;
   display: block;
   margin: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .courseImage {
   width: 150px;
   height: 148px;
   margin: auto auto;
+  justify-content: center;
+  align-items: center;
 }
 
 h3 {
@@ -250,6 +263,8 @@ h3 {
   height: 154px;
   display: block;
   margin: auto;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .button-unity {
@@ -268,7 +283,9 @@ h3 {
   width: 100px;
   height: 100px;
   display: block;
-  margin: 24px 25px;
+  margin: 20px 15%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .button-ruby {
@@ -287,7 +304,9 @@ h3 {
   width: 100px;
   height: 100px;
   display: block;
-  margin: 24px 25px;
+  margin: 20px 15%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .button-js {
@@ -325,7 +344,9 @@ h3 {
   width: 100px;
   height: 89px;
   display: block;
-  margin: 29px 25px;
+  margin: 20px 15%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 .button-go {
@@ -344,7 +365,9 @@ h3 {
   width: 100px;
   height: 100px;
   display: block;
-  margin: 24px 25px;
+  margin: 20px 15%;
+  max-width: 100%;
+  max-height: 100%;
 }
 
 /* Imageスライダー */
@@ -408,4 +431,115 @@ footer {
   font-family: "Futura";
   font-weight: normal;
   text-align: center;
+}
+
+@media screen and (max-width: 470px) {
+  h1 img {
+    width: 70vw;
+    margin: auto;
+  }
+
+  .subtitle {
+    color: #fff;
+    font-size: 100%;
+    text-align: center;
+    margin-top: 20px;
+    font-family: "Futura";
+    font-style: italic;
+  }
+
+  nav {
+    display: none;
+  }
+
+  h2 {
+    font-size: 200%;
+  }
+
+  .Introduction {
+    width: 100%;
+  }
+
+  .intro {
+    width: 90%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .intro1 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .intro2 {
+    width: 100%;
+    height: auto;
+    flex-direction: column-reverse;
+    margin-top: 30px;
+  }
+  .registerText {
+    width: 90%;
+    font-size: 80%;
+    margin: 0 auto;
+    padding: 0 0;
+  }
+
+  .register {
+    font-size: 15px;
+    line-height: 40px;
+    padding: 0 55px;
+    margin: 0 auto;
+    margin-top: 30px;
+  }
+
+  .intro-container {
+    margin: 20px;
+    width: 90%;
+    height: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .Courses {
+    width: 100%;
+  }
+
+  .courses-container {
+    width: 100%;
+    height: auto;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0px 0px 50px;
+  }
+
+  .courseImage {
+    width: 100%;
+  }
+
+  #particles-js {
+    height: 100%;
+  }
+
+  .Images {
+    width: 100%;
+  }
+
+  .slider {
+    margin: 0px 10%;
+    padding: 30px 0px;
+  }
+
+  .sliderImage {
+    height: 200px;
+  }
+
+  .Access {
+    width: 100%;
+  }
 }

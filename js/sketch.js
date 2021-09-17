@@ -25,4 +25,13 @@ $(".slider").slick({
   dots: true,
   slidesToScroll: 1,
   speed: 500,
+  responsive: [
+    {
+      breakpoint: 480,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1,
+      },
+    },
+  ],
 });
